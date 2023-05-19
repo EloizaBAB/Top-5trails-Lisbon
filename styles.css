@@ -1,3 +1,14 @@
 body {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
 }
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* the content of the website should be centered and the website should have max-width of 1400px*/
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
