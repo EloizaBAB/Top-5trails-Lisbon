@@ -3,6 +3,7 @@ let selectedLevel = document.getElementById("selection");
 selectedLevel.addEventListener("change", displayOptions);
 //this function selets the container where the cards are and as the user chooses the level of physical challenge he/she wants
 // the function displays the cards that have the same value option
+// to display the correct cards with the same value, I copied the HTML code that corresponds to the same value of physical chanllenge that was attributed by me
 function displayOptions(event) {
   console.log(selectedLevel);
   let selectValue = selectedLevel.value;
