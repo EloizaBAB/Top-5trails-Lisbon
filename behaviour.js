@@ -1,5 +1,8 @@
+//selected the select form and added an adventlistenner to it for a change in the value
 let selectedLevel = document.getElementById("selection");
 selectedLevel.addEventListener("change", displayOptions);
+//this function selets the container where the cards are and as the user chooses the level of physical challenge he/she wants
+// the function displays the cards that have the same value option
 function displayOptions(event) {
   console.log(selectedLevel);
   let selectValue = selectedLevel.value;
