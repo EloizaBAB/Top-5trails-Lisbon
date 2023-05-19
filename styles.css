@@ -49,9 +49,45 @@ footer {
   grid-column-gap: 40px;
   padding: 40px;
 }
-.about-lisbon,
-.about-me,
-.about-website {
+section {
+  max-width: 100%;
+  margin: 0 auto;
+}
+section.secondary-section {
+  background-color: bisque;
+}
+.image-responsive {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.card {
+  background-color: white;
+}
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin: 80px;
+}
+.card-header.grid-2-columns {
+  grid-gap: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  text-decoration: none;
+  background-color: blueviolet;
+  color: white;
+}
+.card-body {
+  margin: 30px;
 }
 @media (max-width: 900px) {
   header {
@@ -65,5 +101,22 @@ footer {
   header h2 {
     font-size: 20px;
     padding-top: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 12/9;
+  }
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+    margin: 5px;
+  }
+  .card-header.grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+  .grid-footer {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
   }
 }
