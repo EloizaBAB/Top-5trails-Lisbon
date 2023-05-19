@@ -55,6 +55,7 @@ section {
 }
 section.secondary-section {
   background-color: bisque;
+  padding-bottom: 30px;
 }
 .image-responsive {
   width: 100%;

@@ -1,86 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&family=Asap:wght@700&family=Comfortaa&family=DM+Sans:wght@700&family=Dosis:wght@600&family=Heebo:wght@700&family=Lato:ital,wght@0,300;0,700;1,400&family=Montserrat+Alternates:ital,wght@0,200;1,500&family=Montserrat:ital,wght@0,500;0,600;0,800;0,900;1,400;1,600&family=Mukta&family=Nerko+One&family=Nunito:wght@900&family=Oswald:wght@500&family=Pacifico&family=Playfair+Display&family=Quicksand&family=Raleway:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/8a0d7ba526.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Top 9 places to visit in Lisbon</title>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h2>.Hiking in Portugal.</h2>
-        <i class="fa-solid fa-mountain-sun icon" style="color: white"></i>
-        <h1>Top 9 spots to explore in Lisbon</h1>
-      </header>
-      <main>
-        <form action="">
-          <label for="select button"
-            >Choose the physical challenge level you want for your hike:</label
-          >
-          <select name="" id="selection">
-            <option value="">Select</option>
-            <option value="beginner">Beginner</option>
-            <option value="intermediate">Intermediate</option>
-            <option value="expert">Expert</option>
-          </select>
-        </form>
+let selectedLevel = document.getElementById("selection");
+selectedLevel.addEventListener("change", displayOptions);
+function displayOptions(event) {
+  console.log(selectedLevel);
+  let selectValue = selectedLevel.value;
+  let cardContainer = document.getElementById("cards");
 
-        <section class="secondary-section">
-          <h2>Top 9 places to start your hiking journey near Lisbon</h2>
-          <div class="grid grid-3-columns" id="cards">
-            <div class="card" id="option32">
+  if (selectedLevel.value === "beginner") {
+    cardContainer.innerHTML = `   <div class="card" id="option14">
               <div class="card-header grid-2-columns">
                 <img
-                  src="images/caboroca.jpg"
+                  src="images/peninha_01.webp"
                   alt="cabo da roca"
                   class="image-responsive"
                 /><iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12441.084760971271!2d-9.51690944458003!3d38.780417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1edac0235d438d%3A0x953ad8a898fcb3af!2sCabo%20da%20Roca!5e0!3m2!1sen!2spt!4v1684508823401!5m2!1sen!2spt"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  class="embed"
-                ></iframe>
-              </div>
-              <div class="card-body">
-                <h4>Cabo da Roca</h4>
-                <p>
-                  From the top of a sheer cliff, 140 meters (460ft) above the
-                  roaring sea, they see “where land ends and the sea begins,” as
-                  16th-century poet Camões put it, and as inscribed on a plaque
-                  placed here in 1979.
-                </p>
-                <h5>40.2 km from Lisbon</h5>
-                <h5>Expert</h5>
-                <a
-                  href="https://www.sintraportugaltourism.com/guide/cabo-da-roca.html"
-                  class="btn"
-                  target="_blank"
-                  >Learn more</a
-                >
-              </div>
-            </div>
-            <div class="card" id="option2">
-              <div class="card-header grid-2-columns">
-                <img
-                  src="images/castelo-dos-mouros-em-sintra.webp"
-                  alt="castelo dos mouros"
-                  class="image-responsive"
-                /><iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.741493170075!2d-9.3919125244549!3d38.79256015288378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1edac752cb070d%3A0x24f7fbfe228323e0!2sCastelo%20dos%20Mouros!5e0!3m2!1sen!2spt!4v1684511962042!5m2!1sen!2spt"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.7882373294456!2d-9.463199124456068!3d38.768560754296566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1edb21650cb401%3A0xe5ebfeb1a33b956e!2sSanctuary%20of%20Peninha!5e0!3m2!1sen!2spt!4v1684513364724!5m2!1sen!2spt"
                   class="embed"
                   style="border: 0"
                   allowfullscreen=""
@@ -89,24 +22,25 @@
                 ></iframe>
               </div>
               <div class="card-body">
-                <h4>Castelo dos Mouros</h4>
+                <h4>Peninha sanctuary</h4>
                 <p>
-                  Isolated on its lofty perch, one of the peaks in the Sintra
-                  Hills, the Moorish Castle is a fortification founded in the
-                  10th century during the period the Moors occupied the Iberian
-                  Peninsula.
+                  here, up above, at 488 metres in altitude, the Sanctuary of
+                  Peninha bedazzles for its magic and impenetrable mystique.
+                  Built by popular devotion, the Chapel of Our Lady of Penha
+                  (Peninha) emerged after a poor shepherd claimed to have seen
+                  an apparition of Our Lady there.
                 </p>
-                <h5>30.7 km from Lisbon</h5>
-                <h5>Intermediate</h5>
+                <h5>39.3 km from Lisbon</h5>
+                <h5>Beginner</h5>
                 <a
-                  href="https://www.parquesdesintra.pt/en/parks-monuments/the-moorish-castle/"
+                  href="https://www.parquesdesintra.pt/en/parks-monuments/sanctuary-of-peninha/"
                   class="btn"
                   target="_blank"
                   >Learn more</a
                 >
               </div>
             </div>
-            <div class="card" id="option1">
+               <div class="card" id="option1">
               <div class="card-header grid-2-columns">
                 <img
                   src="images/guincho.jpg"
@@ -139,41 +73,7 @@
                 >
               </div>
             </div>
-
-            <div class="card" id="option3">
-              <div class="card-header grid-2-columns">
-                <img
-                  src="images/lousa.jpeg"
-                  alt="Lousã"
-                  class="image-responsive"
-                /><iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6103.504273996524!2d-8.26068912229006!3d40.10323890000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22ef4fa62a63d7%3A0x83295905b006491b!2sTrilho%20dos%20Moleiros!5e0!3m2!1sen!2spt!4v1684512796114!5m2!1sen!2spt"
-                  class="embed"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-              <div class="card-body">
-                <h4>Moleiros trail</h4>
-                <p>
-                  Explore this 9.5-km out-and-back trail near Lousã, Coimbra.
-                  Generally considered a moderately challenging route, it takes
-                  an average of 3 h 47 min to complete. This is a popular trail
-                  for hiking, mountain biking, and running.
-                </p>
-                <h5>210km from Lisbon</h5>
-                <h5>Expert</h5>
-                <a
-                  href="https://www.alltrails.com/trail/portugal/coimbra/pr6-lsa-trilho-dos-moleiros--2"
-                  class="btn"
-                  target="_blank"
-                  >Learn more</a
-                >
-              </div>
-            </div>
-            <div class="card" id="option12">
+               <div class="card" id="option12">
               <div class="card-header grid-2-columns">
                 <img
                   src="images/magoito.jpeg"
@@ -208,7 +108,7 @@
                 >
               </div>
             </div>
-            <div class="card" id="option13">
+             <div class="card" id="option13">
               <div class="card-header grid-2-columns">
                 <img
                   src="images/monserrate.jpeg"
@@ -238,6 +138,40 @@
                 <h5>Beginner</h5>
                 <a
                   href="https://www.parquesdesintra.pt/en/parks-monuments/park-and-palace-of-monserrate/"
+                  class="btn"
+                  target="_blank"
+                  >Learn more</a
+                >
+              </div>
+            </div>`;
+  } else if (selectedLevel.value === "intermediate") {
+    cardContainer.innerHTML = `<div class="card" id="option2">
+              <div class="card-header grid-2-columns">
+                <img
+                  src="images/castelo-dos-mouros-em-sintra.webp"
+                  alt="castelo dos mouros"
+                  class="image-responsive"
+                /><iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.741493170075!2d-9.3919125244549!3d38.79256015288378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1edac752cb070d%3A0x24f7fbfe228323e0!2sCastelo%20dos%20Mouros!5e0!3m2!1sen!2spt!4v1684511962042!5m2!1sen!2spt"
+                  class="embed"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="card-body">
+                <h4>Castelo dos Mouros</h4>
+                <p>
+                  Isolated on its lofty perch, one of the peaks in the Sintra
+                  Hills, the Moorish Castle is a fortification founded in the
+                  10th century during the period the Moors occupied the Iberian
+                  Peninsula.
+                </p>
+                <h5>30.7 km from Lisbon</h5>
+                <h5>Intermediate</h5>
+                <a
+                  href="https://www.parquesdesintra.pt/en/parks-monuments/the-moorish-castle/"
                   class="btn"
                   target="_blank"
                   >Learn more</a
@@ -277,15 +211,49 @@
                   >Learn more</a
                 >
               </div>
-            </div>
-            <div class="card" id="option14">
+            </div>`;
+  } else if (selectedLevel.value === "expert") {
+    cardContainer.innerHTML = ` <div class="card" id="option32">
               <div class="card-header grid-2-columns">
                 <img
-                  src="images/peninha_01.webp"
+                  src="images/caboroca.jpg"
                   alt="cabo da roca"
                   class="image-responsive"
                 /><iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.7882373294456!2d-9.463199124456068!3d38.768560754296566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1edb21650cb401%3A0xe5ebfeb1a33b956e!2sSanctuary%20of%20Peninha!5e0!3m2!1sen!2spt!4v1684513364724!5m2!1sen!2spt"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12441.084760971271!2d-9.51690944458003!3d38.780417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1edac0235d438d%3A0x953ad8a898fcb3af!2sCabo%20da%20Roca!5e0!3m2!1sen!2spt!4v1684508823401!5m2!1sen!2spt"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  class="embed"
+                ></iframe>
+              </div>
+              <div class="card-body">
+                <h4>Cabo da Roca</h4>
+                <p>
+                  From the top of a sheer cliff, 140 meters (460ft) above the
+                  roaring sea, they see “where land ends and the sea begins,” as
+                  16th-century poet Camões put it, and as inscribed on a plaque
+                  placed here in 1979.
+                </p>
+                <h5>40.2 km from Lisbon</h5>
+                <h5>Expert</h5>
+                <a
+                  href="https://www.sintraportugaltourism.com/guide/cabo-da-roca.html"
+                  class="btn"
+                  target="_blank"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+            <div class="card" id="option3">
+              <div class="card-header grid-2-columns">
+                <img
+                  src="images/lousa.jpeg"
+                  alt="Lousã"
+                  class="image-responsive"
+                /><iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6103.504273996524!2d-8.26068912229006!3d40.10323890000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22ef4fa62a63d7%3A0x83295905b006491b!2sTrilho%20dos%20Moleiros!5e0!3m2!1sen!2spt!4v1684512796114!5m2!1sen!2spt"
                   class="embed"
                   style="border: 0"
                   allowfullscreen=""
@@ -294,25 +262,24 @@
                 ></iframe>
               </div>
               <div class="card-body">
-                <h4>Peninha sanctuary</h4>
+                <h4>Moleiros trail</h4>
                 <p>
-                  here, up above, at 488 metres in altitude, the Sanctuary of
-                  Peninha bedazzles for its magic and impenetrable mystique.
-                  Built by popular devotion, the Chapel of Our Lady of Penha
-                  (Peninha) emerged after a poor shepherd claimed to have seen
-                  an apparition of Our Lady there.
+                  Explore this 9.5-km out-and-back trail near Lousã, Coimbra.
+                  Generally considered a moderately challenging route, it takes
+                  an average of 3 h 47 min to complete. This is a popular trail
+                  for hiking, mountain biking, and running.
                 </p>
-                <h5>39.3 km from Lisbon</h5>
-                <h5>Beginner</h5>
+                <h5>210km from Lisbon</h5>
+                <h5>Expert</h5>
                 <a
-                  href="https://www.parquesdesintra.pt/en/parks-monuments/sanctuary-of-peninha/"
+                  href="https://www.alltrails.com/trail/portugal/coimbra/pr6-lsa-trilho-dos-moleiros--2"
                   class="btn"
                   target="_blank"
                   >Learn more</a
                 >
               </div>
             </div>
-            <div class="card" id="option31">
+             <div class="card" id="option31">
               <div class="card-header grid-2-columns">
                 <img
                   src="images/ursa.jpg"
@@ -343,53 +310,7 @@
                   >Learn more</a
                 >
               </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <h2>Feel inspired by Lisbon</h2>
-          <div class="grid-3-columns">
-            <img src="images/img1.jpeg" alt="" class="image-responsive" />
-            <img src="images/img2.jpeg" alt="" class="image-responsive" />
-            <img src="images/img3.jpeg" alt="" class="image-responsive" />
-            <img src="images/img4.jpeg" alt="" class="image-responsive" />
-            <img src="images/img5.jpg" alt="" class="image-responsive" />
-            <img src="images/img7.jpg" alt="" class="image-responsive" />
-          </div>
-        </section>
-      </main>
-      <footer>
-        <section>
-          <div class="grid-footer">
-            <div class="about-lisbon">
-              <h3>Learn more about Lisbon</h3>
-              <a
-                href="https://www.visitlisboa.com/en/p/why-lisbon"
-                target="_blank"
-              >
-                <i class="fa-solid fa-mountain-city" style="color: #ffffff"></i>
-              </a>
-            </div>
-            <div class="about-me">
-              <h3>About me</h3>
-              <p>
-                I'm eloiza barbosa, I live in Lisbon since I was 11 years old.
-                Portugal is my home and I built this website to show other
-                people that love hiking and travelling too its beauty.
-              </p>
-            </div>
-            <div class="about-website">
-              <h3>About this website</h3>
-              <p>
-                This website was created as part of a project for SheCodes
-                Responsive Module to develop my skills in coding and also
-                designing.
-              </p>
-            </div>
-          </div>
-        </section>
-      </footer>
-    </div>
-    <script src="behaviour.js"></script>
-  </body>
-</html>
+            </div>`;
+  }
+}
+displayOptions();
