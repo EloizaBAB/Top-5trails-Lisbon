@@ -34,6 +34,25 @@ header h2 {
   max-width: 1400px;
   margin: 0 auto;
 }
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  line-height: 1.5;
+  background-position: center;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  padding: 40px;
+}
+.about-lisbon,
+.about-me,
+.about-website {
+}
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
