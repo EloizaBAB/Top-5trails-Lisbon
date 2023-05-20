@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
@@ -54,8 +54,15 @@ section {
   margin: 0 auto;
 }
 section.secondary-section {
-  background-color: bisque;
+  background-color: #bbc6c8;
   padding-bottom: 30px;
+}
+section.secondary-section h2 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 50px;
+  color: black;
+  font-family: "Montserrat";
 }
 .image-responsive {
   width: 100%;
@@ -63,6 +70,7 @@ section.secondary-section {
 }
 .card {
   background-color: white;
+  box-shadow: 8px 8px 13px #5c5c5c, -8px -8px 13px #676666;
 }
 .grid-3-columns {
   display: grid;
@@ -84,11 +92,38 @@ section.secondary-section {
   margin: 0 auto;
   padding: 10px;
   text-decoration: none;
-  background-color: blueviolet;
+  background-color: #55666d;
   color: white;
+  text-align: center;
 }
 .card-body {
   margin: 30px;
+}
+form {
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+form select {
+  padding: 5px;
+}
+.op1 {
+  background-color: rgba(38, 170, 38, 0.858);
+  padding: 4px;
+  margin-right: 200px;
+  border-radius: 3px;
+}
+.op2 {
+  background-color: rgba(216, 216, 34, 0.887);
+  padding: 4px;
+  margin-right: 200px;
+  border-radius: 3px;
+}
+.op3 {
+  background-color: rgba(214, 60, 60, 0.911);
+  padding: 4px;
+  margin-right: 200px;
+  border-radius: 3px;
 }
 @media (max-width: 900px) {
   header {
