@@ -50,12 +50,8 @@ footer {
   grid-column-gap: 40px;
   padding: 40px;
 }
-section {
-  max-width: 100%;
-  margin: 0 auto;
-}
 
-section.secondary-section h2 {
+h2 {
   text-align: center;
   font-size: 40px;
   padding-top: 50px;
@@ -70,13 +66,14 @@ section.secondary-section h2 {
 }
 .card {
   background-color: white;
-  box-shadow: 8px 8px 13px #5c5c5c, -8px -8px 13px #676666;
+  box-shadow: 8px 5px 10px #5c5c5c, -8px -8px 13px #676666;
+  border-radius: 3px;
 }
 .grid-3-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px;
-  margin: 80px;
+  margin: 50px;
 }
 .card-header.grid-2-columns {
   grid-gap: 0;
@@ -92,9 +89,12 @@ section.secondary-section h2 {
   margin: 0 auto;
   padding: 10px;
   text-decoration: none;
-  background-color: #55666d;
+  background-color: #8fafb5;
+  font-size: 20px;
   color: white;
   text-align: center;
+  border-radius: 3px;
+  font-weight: 500;
 }
 .card-body {
   margin: 30px;
@@ -102,14 +102,19 @@ section.secondary-section h2 {
 form {
   padding-top: 70px;
   text-align: center;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 35px;
+  font-weight: 500;
   color: white;
 }
 form select {
-  padding: 3px;
+  padding: 7px;
   background-color: rgba(232, 61, 95, 0.539);
   border-radius: 3px;
+  margin-top: 25px;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: lighter;
 }
 .op1 {
   background-color: rgba(38, 170, 38, 0.858);
