@@ -54,11 +54,7 @@ section {
   max-width: 100%;
   margin: 0 auto;
 }
-section.secondary-section {
-  background-color: #8fafb5;
-  padding-bottom: 30px;
-  border-radius: 2px;
-}
+
 section.secondary-section h2 {
   text-align: center;
   font-size: 40px;
@@ -104,10 +100,11 @@ section.secondary-section h2 {
   margin: 30px;
 }
 form {
-  padding: 70px;
+  padding-top: 70px;
   text-align: center;
   font-size: 30px;
   font-weight: 600;
+  color: white;
 }
 form select {
   padding: 3px;
