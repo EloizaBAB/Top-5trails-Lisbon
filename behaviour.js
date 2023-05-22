@@ -35,7 +35,7 @@ function displayOptions(event) {
                   an apparition of Our Lady there.
                 </p>
                 <h5>39.3 km from Lisbon</h5>
-                <h5>Beginner</h5>
+                <h5 class="op1">Beginner</h5>
                 <a
                   href="https://www.parquesdesintra.pt/en/parks-monuments/sanctuary-of-peninha/"
                   class="btn"
@@ -68,7 +68,7 @@ function displayOptions(event) {
                   de Sintra hills, looming in the background.
                 </p>
                 <h5>34.1 km from Lisbon</h5>
-                <h5>Beginner</h5>
+                <h5 class="op1">Beginner</h5>
                 <a
                   href="https://lisbonlisboaportugal.com/lisbon-beaches/Praia-Guincho-beach-lisbon.html"
                   class="btn"
@@ -103,7 +103,7 @@ function displayOptions(event) {
                   traces of human activity from the Paleolithic era.
                 </p>
                 <h5>44.2 km from Lisbon</h5>
-                <h5>Beginner</h5>
+                <h5 class="op1">Beginner</h5>
                 <a
                   href="https://www.lisbonbeachesguide.com/sintra/praia-do-magoito-beach.html"
                   class="btn"
@@ -139,7 +139,7 @@ function displayOptions(event) {
                   Jr., who combined various different influences here.
                 </p>
                 <h5>39.9 km from Lisbon</h5>
-                <h5>Beginner</h5>
+                <h5 class="op1">Beginner</h5>
                 <a
                   href="https://www.parquesdesintra.pt/en/parks-monuments/park-and-palace-of-monserrate/"
                   class="btn"
@@ -173,7 +173,7 @@ function displayOptions(event) {
                   Peninsula.
                 </p>
                 <h5>30.7 km from Lisbon</h5>
-                <h5>Intermediate</h5>
+                <h5 class="op2">Intermediate</h5>
                 <a
                   href="https://www.parquesdesintra.pt/en/parks-monuments/the-moorish-castle/"
                   class="btn"
@@ -207,7 +207,7 @@ function displayOptions(event) {
                   corners, our gaze gets lost amongst its charms.
                 </p>
                 <h5>33.2 km from Lisbon</h5>
-                <h5>intermediate</h5>
+                <h5 class="op2">intermediate</h5>
                 <a
                   href="https://www.parquesdesintra.pt/en/parks-monuments/park-and-national-palace-of-pena/"
                   class="btn"
@@ -241,7 +241,7 @@ function displayOptions(event) {
                   placed here in 1979.
                 </p>
                 <h5>40.2 km from Lisbon</h5>
-                <h5>Expert</h5>
+                <h5 class="op3">Expert</h5>
                 <a
                   href="https://www.sintraportugaltourism.com/guide/cabo-da-roca.html"
                   class="btn"
@@ -274,7 +274,7 @@ function displayOptions(event) {
                   for hiking, mountain biking, and running.
                 </p>
                 <h5>210km from Lisbon</h5>
-                <h5>Expert</h5>
+                <h5 class="op3 >Expert</h5>
                 <a
                   href="https://www.alltrails.com/trail/portugal/coimbra/pr6-lsa-trilho-dos-moleiros--2"
                   class="btn"
@@ -306,7 +306,7 @@ function displayOptions(event) {
                   it's the westernmost beach in mainland Europe.
                 </p>
                 <h5>41.6 km from Lisbon</h5>
-                <h5>Expert</h5>
+                <h5 class="op3">Expert</h5>
                 <a
                   href="https://www.lisbonbeachesguide.com/sintra/praia-da-ursa-beach.html"
                   class="btn"
