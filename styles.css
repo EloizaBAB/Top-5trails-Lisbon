@@ -1,8 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: white;
-
   background: linear-gradient(145deg, #ffffff, #e3e4e4);
+  margin: 0;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
@@ -35,7 +34,7 @@ header h2 {
 /* the content of the website should be centered and the website should have max-width of 1400px*/
 .container {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 10px;
 }
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -160,14 +159,22 @@ form select {
     padding: 60px 0;
   }
   header h1 {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 1;
     padding-bottom: 30px;
   }
+
   header h2 {
     font-size: 20px;
     padding-top: 30px;
+    color: white;
   }
+  form {
+    font-size: 25px;
+    padding: 40px;
+    text-align: start;
+  }
+
   .card-header img {
     display: none;
   }
@@ -176,7 +183,7 @@ form select {
   }
   .grid-3-columns {
     grid-template-columns: 1fr;
-    margin: 5px;
+    margin: 2px;
   }
   .card-header.grid-2-columns {
     grid-template-columns: 1fr;
